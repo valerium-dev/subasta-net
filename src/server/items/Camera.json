@@ -1,0 +1,14 @@
+{
+  "id" : 321,
+  "name" : "Camera",
+  "description" : "DSLR Starter Kit -- with 2 lenses",
+  "imageURLs": [
+    "google.com"
+  ],
+  "duration" : 5,
+  "timeLeft" : 5.0,
+  "minPrice": 350.0,
+  "buyNowPrice" : -1.0,
+  "currentBid" : 1.0,
+  "seller" : "photoLover"
+}

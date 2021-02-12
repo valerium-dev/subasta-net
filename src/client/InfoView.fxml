@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<HBox fx:id="parentContainer" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="432.0" minWidth="768.0" spacing="8.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="final_exam.InfoViewController">
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+   <VBox alignment="CENTER">
+      <ImageView fx:id="galleryImage" pickOnBounds="true" preserveRatio="true" />
+      <HBox alignment="CENTER" spacing="15.0">
+         <children>
+            <Button fx:id="prevImage" mnemonicParsing="false" text="&lt;" />
+            <Text fx:id="imageNum" strokeType="OUTSIDE" strokeWidth="0.0" text="1 of n" />
+            <Button fx:id="nextImage" mnemonicParsing="false" text="&gt;" />
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+   </VBox>
+   <VBox alignment="CENTER_LEFT" spacing="15.0">
+      <Text fx:id="itemName" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Name">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="currentBid" strokeType="OUTSIDE" strokeWidth="0.0" text="Top Bid">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="buyNowPrice" strokeType="OUTSIDE" strokeWidth="0.0" text="Buy Now Price" />
+      <Text fx:id="countdown" strokeType="OUTSIDE" strokeWidth="0.0" text="Time Left">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="description" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" />
+      <Text fx:id="sellerID" strokeType="OUTSIDE" strokeWidth="0.0" text="Seller: " />
+      <VBox alignment="CENTER" spacing="3.0">
+         <children>
+            <HBox alignment="CENTER" spacing="8.0">
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="\$" />
+               <TextField fx:id="bidAmount" prefHeight="27.0" prefWidth="85.0" promptText="000000.00" />
+               <Button fx:id="bidButton" mnemonicParsing="false" onAction="#bidOnItem" text="Bid!" />
+            </HBox>
+            <Text fx:id="bidStatus" strokeType="OUTSIDE" strokeWidth="0.0" text="Status" />
+         </children>
+      </VBox>
+      <HBox.margin>
+         <Insets />
+      </HBox.margin>
+   </VBox>
+</HBox>

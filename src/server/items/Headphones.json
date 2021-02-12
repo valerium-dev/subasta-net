@@ -1,0 +1,14 @@
+{
+  "id" : 9,
+  "name" : "Noise-Cancelling Headphones DXIII",
+  "description" : "Great quality, new-in-box headphones",
+  "imageURLs": [
+    "google.com"
+  ],
+  "duration" : 10,
+  "timeLeft" : 10.0,
+  "minPrice": 250.0,
+  "buyNowPrice" : -1.0,
+  "currentBid" : 1.0,
+  "seller" : "~audiophile~"
+}

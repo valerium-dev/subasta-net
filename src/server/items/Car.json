@@ -1,0 +1,14 @@
+{
+  "id" : 215,
+  "name" : "Car [Collector's Edition]",
+  "description" : "Perfect for use with Hot Wheels tracks",
+  "imageURLs": [
+    "google.com"
+  ],
+  "duration" : 2,
+  "timeLeft" : 5.0,
+  "minPrice": 225.0,
+  "buyNowPrice" : -1.0,
+  "currentBid" : 1.0,
+  "seller" : "iMakecarGOvroom"
+}

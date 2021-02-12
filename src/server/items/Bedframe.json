@@ -1,0 +1,14 @@
+{
+  "id" : 123,
+  "name" : "Bed Frame",
+  "description" : "Vintage wood bed frame. Perfect for giving your bedroom a rustic, homey feel",
+  "imageURLs": [
+    "google.com"
+  ],
+  "duration" : 3,
+  "timeLeft" : 3.0,
+  "minPrice": 750.0,
+  "buyNowPrice" : -1.0,
+  "currentBid" : 1.0,
+  "seller" : "frames4Lyfe"
+}

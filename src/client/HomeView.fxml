@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<SplitPane fx:id="splitPane" dividerPositions="0.4" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="final_exam.HomeViewController">
+    <ListView fx:id="itemListView" onMouseClicked="#updateInfoBox" />
+    <VBox fx:id="infoBox" alignment="BOTTOM_CENTER" spacing="10.0">
+        <StackPane fx:id="container">
+            <ImageView fx:id="primaryImage" pickOnBounds="true" preserveRatio="true">
+            </ImageView>
+        </StackPane>
+        <VBox fx:id="labels" alignment="CENTER" spacing="8.0">
+         <Text fx:id="itemName" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Name" />
+         <HBox alignment="CENTER" spacing="15.0">
+            <children>
+                  <Text fx:id="currentTopBid" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Top Bid" />
+               <Text fx:id="buyNowPrice" strokeType="OUTSIDE" strokeWidth="0.0" text="BuyNow Price" />
+            </children>
+         </HBox>
+            <Text fx:id="countdown" strokeType="OUTSIDE" strokeWidth="0.0" text="Countdown" />
+            <Button fx:id="moreInfo" mnemonicParsing="false" onAction="#showMoreInfo" text="More Info" />
+        </VBox>
+      <VBox fx:id="bidInfo" alignment="BOTTOM_CENTER" spacing="2.0">
+         <children>
+              <HBox fx:id="controls" alignment="CENTER" disable="true" spacing="6.0">
+                  <VBox.margin>
+                      <Insets />
+                  </VBox.margin>
+                  <padding>
+                      <Insets left="15.0" right="15.0" />
+                  </padding>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="\$" />
+               <TextField fx:id="bidAmount" prefHeight="27.0" prefWidth="96.0" promptText="0.00" />
+                  <Button fx:id="bid" mnemonicParsing="false" onAction="#bidOnItem" text="Bid!" />
+              </HBox>
+            <Text fx:id="bidStatus" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Return Code" />
+         </children>
+      </VBox>
+      <HBox alignment="BOTTOM_RIGHT">
+         <children>
+            <Button fx:id="quitButton" mnemonicParsing="false" onAction="#exitProgram" text="Quit" />
+         </children>
+         <padding>
+            <Insets right="15.0" />
+         </padding>
+      </HBox>
+      <padding>
+         <Insets bottom="15.0" />
+      </padding>
+    </VBox>
+</SplitPane>
